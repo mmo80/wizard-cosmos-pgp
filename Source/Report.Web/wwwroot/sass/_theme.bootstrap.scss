@@ -1,0 +1,18 @@
+@import "variables";
+
+.invalid-feedback {
+    display: block;
+}
+
+.btn-primary,
+a.btn-primary,
+a.btn-primary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: $reportweb-green-dark;
+    border-color: $reportweb-green-dark;
+
+    &:hover {
+        background-color: $reportweb-green-darker;
+        border-color: $reportweb-green-darker;
+    }
+}

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>c2862c32-ae92-4b0c-87db-541c3bf02f3b</UserSecretsId>
+  </PropertyGroup>
+
+	<ItemGroup>
+    <Folder Include="wwwroot\dist\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\react-app\Components\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle" Version="1.8.9" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.23.0" />
+    <PackageReference Include="PgpCore" Version="5.4.0" />
+    <PackageReference Include="SendGrid" Version="9.24.4" />
+  </ItemGroup>
+
+</Project>
